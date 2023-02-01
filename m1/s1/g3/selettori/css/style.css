@@ -1,0 +1,45 @@
+
+
+#blueviolet{
+    background-color: blueviolet;
+}
+
+
+.giallo{
+    background-color: yellow;
+}
+
+
+/*
+Posso modificare la dimensione assoluta di tutti itesti del body{
+    font-size:20px... dimensionamento assoluto
+    */
+
+
+
+    @import 'https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto:ital,wght@1,300&display=swap';
+
+:root{
+   font-size: 25px;
+}
+
+#t1{
+    font-size: 2rem;
+    color:rgba(16, 231, 63, 0.788);
+}
+
+#t2{
+   font-size: 16px; 
+   color: rgb(0, 38, 255);
+   font-family: 'roboto';
+   height: 100px;
+}
+
+#parent{
+    font-size: 50px;
+   
+}
+
+#t3{
+    font: size 1em;
+}

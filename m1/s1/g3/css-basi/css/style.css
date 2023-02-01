@@ -1,0 +1,29 @@
+/*
+Questo è 
+un commento
+*/
+
+/*
+selettore{
+    proprieta/regola : valore;
+}
+
+*/
+
+
+
+div{
+
+    color: red;
+    background-color: blue;
+
+}
+
+div span{
+    color: #fff;
+
+}
+
+div,span{
+    border: 1px solid#000;
+}
