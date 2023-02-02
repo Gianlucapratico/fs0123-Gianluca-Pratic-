@@ -1,0 +1,34 @@
+section > span{
+    text-decoration: line-through;
+}
+
+section + small{
+    font-weight: bold;
+}
+section ~ small{
+    /*tutti gli small dopo la section*/
+    color: red;
+}
+
+/*esempio menu mobile pure css */
+
+#toggle{
+    display: none;
+}
+
+#menu{
+    background-color: bisque;
+    height: 5px;;
+    overflow: hidden;
+    transition: height 0.3s;
+
+}
+
+#toggle:checked + #menu{
+    height: 70px;
+}
+
+
+#menu li:hover{
+    background-color: white;
+}

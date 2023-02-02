@@ -1,0 +1,23 @@
+.quadrato{
+    width: 200px;
+    height: 200px;
+    border: 1px solid#000;
+
+}
+
+#q1{
+    background-image: url(../img/HTML5_logo_and_wordmark.svg.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+#q2{
+    background-image: url(../img/HTML5_logo_and_wordmark.svg.png), url(../img/HTML5_logo_and_wordmark);
+    background-size: 100px;
+    background-repeat: no-repeat, repeat-y;
+    background-position: right top,left bottom;   
+}
+
+
+

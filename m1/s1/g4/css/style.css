@@ -1,0 +1,26 @@
+.quadrato{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    overflow: auto;
+}
+
+.max{
+    max-width: 600px;
+    background-color: blue;
+    min-height: 10px;
+}
+
+.padding{
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.border{
+    border-top: 5px solid black;
+    border-top-left-radius: 100%;
+}
+
+.margin{
+    margin: 100px;
+}
