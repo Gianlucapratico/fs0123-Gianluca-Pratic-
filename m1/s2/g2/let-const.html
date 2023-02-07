@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //apro un blocco
+
+       {
+            var a = 0
+            console.log (a)
+       }
+       console.log(a)
+
+
+
+       {
+            let b = 1
+            console.log (b)
+       }
+       
+        //Uncaught ReferenceError: b is not defined se metto console log fuori dal blocco
+
+       {let b = 1
+        console.log (b)
+        
+        }
+        
+
+
+        var c = 2
+        {
+            let c = 3
+            console.log (c)// mi riferisco alla let della riga 38
+            
+        }
+        console.log (c)// mi riferico alla variabile della riga 36
+
+        // esempio
+
+        let condizione = true;
+        let numero; //inizializzo fuori dal blocco
+        if(condizione){
+            numero = 90;//valorizzo in un blocco
+        }else{
+            numero = 50;//valorizzo in un blocco
+        }
+        console.log (numero) // la variabile è disponibile
+
+
+        //CONST
+
+        const D = 4
+
+        //D = 9 // Assigment to constant variable.
+        // convenzione di naming
+
+        const NOME_DELLA_COSTANTE = 1;
+
+        //valori interni
+        const OGGETTO ={
+            nome:'Mario',
+            cognome:'Rossi'
+        }
+
+        //Object.freeze(OGGETTO) => posso "congelare l'oggetto"
+        OGGETTO.nome = 'Marco';
+
+        console.log(OGGETTO)
+
+
+
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>
