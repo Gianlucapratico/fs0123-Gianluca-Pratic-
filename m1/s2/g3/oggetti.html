@@ -10,7 +10,7 @@
 
 
     <script>
-
+{
         let objOld = new Object();//sconsigliato
         let obj = {};//si usa questo
 
@@ -22,6 +22,7 @@
             }
         }
         console.table(pizza)
+        
 
         //lettura di uuna proprieta
 
@@ -34,11 +35,32 @@
 
         //utilizzo dei metodi
 
-        pizza.mostraPrezzo
+        pizza.mostraPrezzo()
 
         //mostraPrezzo()//la funzione non esiste
 
+    }
 
+    {
+        //costruttore
+
+        function Pizza(_gusto , _prezzo){
+            this.gusto = _gusto;
+            this.prezzo = _prezzo;
+            this.mostraPrezzo = function() {
+                console.log(` la pizza ${this.gusto} costa ${this.prezzo}`  )
+            }
+        }
+
+        let margherita = new Pizza('Margherita', 5);
+        let diavola = new Pizza('Diavola' , 1);
+
+        console.log(margherita)
+        console.log(diavola)
+
+
+
+    }
 
     </script>
     

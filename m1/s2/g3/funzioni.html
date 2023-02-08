@@ -67,7 +67,7 @@
         /* closure*/ //annidamento delle funzioni
 
         function funzione1(){
-            let a
+            let = a
             function funzione2(){// non posso usarla fuori da fuznione 1
                 console.log(a)
                 let x = 3
@@ -78,6 +78,16 @@
         }
 
         funzione1();
+
+        /*variabili che contengono funzioni*/
+
+        let fn = function(){
+            return 'ok'
+            
+
+        }
+        console.log(fn)//vedo il contenuto della funzione
+        console.log(fn());//eseguo la funzione e cosi ne ricevo il risultato
 
 
          
