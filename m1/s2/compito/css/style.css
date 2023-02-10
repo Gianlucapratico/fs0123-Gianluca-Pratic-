@@ -1,0 +1,55 @@
+.padre{
+    width: 270px;
+    
+    
+    
+    
+    
+    
+}
+
+.tasti{
+    display:inline-block;
+    height: 50px;
+    width: calc(100% / 4 - 0.9rem);
+    margin: 5px;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+input{
+    height: 30px;
+    width: 250px;
+    
+}
+.risultato{
+    height: 30px;
+    width: 255px;
+    color:blue
+    
+    
+}
+
+.simbolo{
+    
+    
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;    
+    height: 50px;
+    width: 50px;
+    
+    
+    
+    
+   
+}
+
+

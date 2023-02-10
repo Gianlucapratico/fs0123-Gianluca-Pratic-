@@ -223,12 +223,12 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-/*let totale = 1100
-switch (totale) {
-  case totale < 500:
+let totale = 1100
+switch (true) {
+  case (totale < 500):
       console.log('Ship is under loaded');
       break;
-  case totale == 500:
+  case (totale == 500):
       console.log('ship is half loaded');
       break;
       
@@ -246,9 +246,9 @@ switch (totale) {
       
       
     }
-    */
+    
 
-let totale = 1100
+/*let totale = 1100
 
 if(totale < 500){
   console.log('Ship is under loaded');
