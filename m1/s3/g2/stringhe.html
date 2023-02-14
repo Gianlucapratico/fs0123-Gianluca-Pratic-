@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let stringa = 'Ci manca molto il CSS'
+
+
+        //indexOf è case sensitive, restituisce -1 se non trova nulla
+        console.log( stringa.indexOf('molto') );
+
+
+        //toLowerCase() converte i caratteri maiuscoli in caratteri minuscoli
+        let ricerca = 'CSS'
+        if(stringa.toLowerCase().indexOf(ricerca.toLowerCase()) != -1){
+            console.log('trovata')
+
+        }
+
+
+        let testo = 'lorem Ipsum####';
+
+        //replace sostituisce solo la prima corrispondenza
+        console.log( testo.replace('#', ''))
+        //replace sostituisce tute le corrispondenze
+        console.log( testo.replaceAll('#', ''))
+
+        //replace accetta anche regex
+
+        //la regex che indica g sostituisce tutte le corrispondenze
+        console.log( testo.replaceAll(/#/g, ''));
+
+        //la regex che indica i sostituisce la prima corrispondenza facendo una ricerca case insensitive
+       // console.log( testo.replaceAll(/l/i, ''));
+
+        //split e join
+
+        let csv = 'mario,rossi,30';
+
+        csv.split('')
+
+        //split non modifica il dato originale
+        console.log( csv.split(',') );//taglio in corrispondenza delle virgole
+
+
+       let dati = ['Mario','Rossi',30]
+
+       //join trasforma l array in stringa
+       //se non indico un argomento unisce usando la virgola
+
+       console.log(dati.Join())
+
+        //altrimenti è possibile inserire un carattere a scelta
+       console.log(dati.Join(';'))
+
+
+
+
+    </script>
+</body>
+</html>

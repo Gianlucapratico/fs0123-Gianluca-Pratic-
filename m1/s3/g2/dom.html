@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="prova"></div>
+    <div class="quadrato"></div>
+    <div class="quadrato"></div>
+
+
+    <script>
+
+        document.getElementById("prova");//un solo elemento
+        document.getElementsByClassName('quadrato')//sempre una lista elementi con classe quadrato(anche se c'è n'è uno solo). Non ciclabile con i metodi degli array
+        document.getElementsByTagName('div')
+
+        //per ottenere un array ciclabile fare cosi:
+        let listaCiclabile = Array.from(document.getElementsByClassName('quadrato'))
+
+        //nuovi selettori
+        //FUNZIONANO CON QUALSIASI QUERY DI CSS
+        document.querySelector('#prova');// l elemento con id prova
+        document.querySelector('.quadrato');// il primo elemento con la classe quadrato o null
+
+        //restituisce sempre un array anche se c'è un solo elemento o nulla
+        document.querySelectorAll('.quadrato')//tutti gli elementi con la classe quadrato
+        document.querySelectorAll('div')//tutti gli elementi div
+        document.querySelectorAll('div span')//tutti gli elementi span figli di un div
+
+
+        
+
+
+    </script>
+</body>
+</html>
