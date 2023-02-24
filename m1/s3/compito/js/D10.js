@@ -203,9 +203,9 @@ console.log(whatDayIsIt());
 function newestMovie(movies){
   
   
-  let nuovoFilm = movies[1];
+  let nuovoFilm = movies[0];
 
-  for(let i = 1; i < movies.length; i++){
+  for(let i = 0; i < movies.length; i++){
     if(movies[i].Year > nuovoFilm.Year){
       nuovoFilm = movies[i];
     }
@@ -213,6 +213,7 @@ function newestMovie(movies){
   return nuovoFilm;
 
 }
+
 
 
 /* ESERCIZIO 13
@@ -271,9 +272,12 @@ console.log(tdElements);
 function tabella(){
   const td = document.getElementsByTagName("td");
   for(let i = 0; i < td.length; i++){
-    console.log(td[i].textContent);
+    let k = td[i].textContent;
+  
+    console.log(k);
   }
 }
+tabella();
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
@@ -449,3 +453,4 @@ const movies = [
       'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
   },
 ]
+console.log(newestMovie(movies));
